@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f874a65-f309-4697-b7cb-3573ee9ee971" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6b0bb6cd-fb95-4cd5-a50f-0d84bc142a86.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6b0bb6cd-fb95-4cd5-a50f-0d84bc142a86.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6b0bb6cd-fb95-4cd5-a50f-0d84bc142a86/storage_v2/_src_/database/postgres.edMnLQ/schema/stats.n8SKBg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6b0bb6cd-fb95-4cd5-a50f-0d84bc142a86/storage_v2/_src_/database/postgres.edMnLQ/schema/stats.n8SKBg.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DataCollection.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DataCollection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/TableTransformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/TableTransformation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,13 @@
       <recent name="$PROJECT_DIR$/DataBase" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="SQLScriptSettings">
+    <option name="matrix">
+      <map>
+        <entry key="POSTGRES.CreateComplete" value="CreateOrReplace=1" />
+      </map>
+    </option>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

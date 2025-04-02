@@ -24,7 +24,7 @@ def close_connection(cursor, connection):
     connection.close()
     print("Connection closed!")
 
-def create_passing_table(cursor):
+def create_complete_stats_table(cursor):
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS stats."Passing_Table"
 (
