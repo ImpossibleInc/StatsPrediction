@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.53">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>815</IntrospectionStateNumber>
+      <IntrospectionStateNumber>851</IntrospectionStateNumber>
       <ServerVersion>17.4</ServerVersion>
       <StartupTime>1743224196</StartupTime>
       <TimeZones>true ACDT
@@ -809,7 +809,7 @@ false Zulu
 16395||16401|C|G
 16395||10|U|G
 16395||16401|U|G</Grants>
-      <IntrospectionStateNumber>815</IntrospectionStateNumber>
+      <IntrospectionStateNumber>851</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4253,8 +4253,8 @@ false Zulu
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <schema id="269" parent="3" name="stats">
-      <IntrospectionStateNumber>815</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2025-04-01.16:22:05</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>851</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2025-04-02.06:24:01</LastIntrospectionLocalTimestamp>
       <ObjectId>16395</ObjectId>
       <StateNumber>768</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4265,197 +4265,431 @@ false Zulu
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>datascrape</OwnerName>
     </table>
-    <column id="271" parent="270" name="Season">
+    <table id="271" parent="269" name="Receiving_Stats">
+      <ObjectId>16543</ObjectId>
+      <StateNumber>849</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>datascrape</OwnerName>
+    </table>
+    <table id="272" parent="269" name="Rushing_Stats">
+      <ObjectId>16537</ObjectId>
+      <StateNumber>846</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>datascrape</OwnerName>
+    </table>
+    <column id="273" parent="270" name="Season">
       <Position>1</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="272" parent="270" name="Player">
+    <column id="274" parent="270" name="Player">
       <Position>2</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="273" parent="270" name="Age">
+    <column id="275" parent="270" name="Age">
       <Position>3</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="274" parent="270" name="Team">
+    <column id="276" parent="270" name="Team">
       <Position>4</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="275" parent="270" name="Pos">
+    <column id="277" parent="270" name="Pos">
       <Position>5</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="276" parent="270" name="G">
+    <column id="278" parent="270" name="G">
       <Position>6</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="277" parent="270" name="GS">
+    <column id="279" parent="270" name="GS">
       <Position>7</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="278" parent="270" name="QBrec">
+    <column id="280" parent="270" name="QBrec">
       <Position>8</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="279" parent="270" name="Cmp">
+    <column id="281" parent="270" name="Cmp">
       <Position>9</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="280" parent="270" name="Att">
+    <column id="282" parent="270" name="Att">
       <Position>10</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="281" parent="270" name="Cmp%">
+    <column id="283" parent="270" name="Cmp%">
       <Position>11</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="282" parent="270" name="Yds">
+    <column id="284" parent="270" name="Yds">
       <Position>12</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="283" parent="270" name="TD">
+    <column id="285" parent="270" name="TD">
       <Position>13</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="284" parent="270" name="TD%">
+    <column id="286" parent="270" name="TD%">
       <Position>14</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="285" parent="270" name="Int">
+    <column id="287" parent="270" name="Int">
       <Position>15</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="286" parent="270" name="Int%">
+    <column id="288" parent="270" name="Int%">
       <Position>16</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="287" parent="270" name="1D">
+    <column id="289" parent="270" name="1D">
       <Position>17</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="288" parent="270" name="Succ%">
+    <column id="290" parent="270" name="Succ%">
       <Position>18</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="289" parent="270" name="Lng">
+    <column id="291" parent="270" name="Lng">
       <Position>19</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="290" parent="270" name="Y/A">
+    <column id="292" parent="270" name="Y/A">
       <Position>20</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="291" parent="270" name="AY/A">
+    <column id="293" parent="270" name="AY/A">
       <Position>21</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="292" parent="270" name="Y/C">
+    <column id="294" parent="270" name="Y/C">
       <Position>22</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="293" parent="270" name="Y/G">
+    <column id="295" parent="270" name="Y/G">
       <Position>23</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="294" parent="270" name="Rate">
+    <column id="296" parent="270" name="Rate">
       <Position>24</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="295" parent="270" name="QBR">
+    <column id="297" parent="270" name="QBR">
       <Position>25</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="296" parent="270" name="Sk">
+    <column id="298" parent="270" name="Sk">
       <Position>26</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="297" parent="270" name="Yds.1">
+    <column id="299" parent="270" name="Yds.1">
       <Position>27</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="298" parent="270" name="Sk%">
+    <column id="300" parent="270" name="Sk%">
       <Position>28</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="299" parent="270" name="NY/A">
+    <column id="301" parent="270" name="NY/A">
       <Position>29</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="300" parent="270" name="ANY/A">
+    <column id="302" parent="270" name="ANY/A">
       <Position>30</Position>
       <StateNumber>813</StateNumber>
       <StoredType>text|0s</StoredType>
       <TypeId>25</TypeId>
     </column>
-    <column id="301" parent="270" name="4QC">
+    <column id="303" parent="270" name="4QC">
       <Position>31</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
     </column>
-    <column id="302" parent="270" name="GWD">
+    <column id="304" parent="270" name="GWD">
       <Position>32</Position>
       <StateNumber>813</StateNumber>
       <StoredType>double precision|0s</StoredType>
       <TypeId>701</TypeId>
+    </column>
+    <column id="305" parent="271" name="Season">
+      <Position>1</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="306" parent="271" name="Player">
+      <Position>2</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="307" parent="271" name="Age">
+      <Position>3</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="308" parent="271" name="Team">
+      <Position>4</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="309" parent="271" name="Pos">
+      <Position>5</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="310" parent="271" name="G">
+      <Position>6</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="311" parent="271" name="GS">
+      <Position>7</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="312" parent="271" name="Rec">
+      <Position>8</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="313" parent="271" name="Yds">
+      <Position>9</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="314" parent="271" name="Y/R">
+      <Position>10</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="315" parent="271" name="TD">
+      <Position>11</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="316" parent="271" name="Lng">
+      <Position>12</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="317" parent="271" name="R/G">
+      <Position>13</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="318" parent="271" name="Y/G">
+      <Position>14</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="319" parent="271" name="Fmb">
+      <Position>15</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="320" parent="271" name="Tgt">
+      <Position>16</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="321" parent="271" name="Ctch%">
+      <Position>17</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="322" parent="271" name="Y/Tgt">
+      <Position>18</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="323" parent="271" name="1D">
+      <Position>19</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="324" parent="271" name="Succ%">
+      <Position>20</Position>
+      <StateNumber>849</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="325" parent="272" name="Season">
+      <Position>1</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="326" parent="272" name="Player">
+      <Position>2</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="327" parent="272" name="Age">
+      <Position>3</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="328" parent="272" name="Team">
+      <Position>4</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="329" parent="272" name="Pos">
+      <Position>5</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="330" parent="272" name="G">
+      <Position>6</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="331" parent="272" name="GS">
+      <Position>7</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="332" parent="272" name="Att">
+      <Position>8</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="333" parent="272" name="Yds">
+      <Position>9</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="334" parent="272" name="TD">
+      <Position>10</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="335" parent="272" name="1D">
+      <Position>11</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="336" parent="272" name="Succ%">
+      <Position>12</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="337" parent="272" name="Lng">
+      <Position>13</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="338" parent="272" name="Y/A">
+      <Position>14</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="339" parent="272" name="Y/G">
+      <Position>15</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="340" parent="272" name="A/G">
+      <Position>16</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>double precision|0s</StoredType>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="341" parent="272" name="Fmb">
+      <Position>17</Position>
+      <StateNumber>846</StateNumber>
+      <StoredType>text|0s</StoredType>
+      <TypeId>25</TypeId>
     </column>
   </database-model>
 </dataSource>
