@@ -10,7 +10,10 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="database" qname="postgres">
-            <node kind="schema" qname="stats" />
+            <node kind="schema">
+              <name qname="stats" />
+              <name qname="public" />
+            </node>
           </node>
         </introspection-scope>
       </schema-mapping>

@@ -95,6 +95,11 @@ def get_receiving (num1, num2, eng):
 
     receiving_table.to_sql('Receiving_Stats', eng, if_exists='replace', index=False)
 
+def get_all (num1, num2, eng):
+    get_passing(num1, num2, eng)
+    get_receiving(num1, num2, eng)
+    get_rushing(num1, num2, eng)
+
 def basic_clean(stat_season, season):
     stat_season['Pos'] = stat_season['Pos'].fillna('ATH')
     stat_season = stat_season.fillna(0)
@@ -106,7 +111,6 @@ def basic_clean(stat_season, season):
     mask = stat_season[stat_season.columns[1]] == "League Average"
     stat_season = stat_season[~mask]
     return stat_season
-
 
 def column_diff(stat_season, prev_column_number, prev_columns, season, output):
     if len(stat_season.columns) != prev_column_number:
